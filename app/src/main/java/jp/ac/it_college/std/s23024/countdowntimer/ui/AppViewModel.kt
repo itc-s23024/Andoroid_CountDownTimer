@@ -8,7 +8,7 @@ class AppViewModel : ViewModel() {
         private set
     var timer: MyCountDownTimer? = null
 
-    fun startTime(millisInFuture: Long) {
+    fun startTimer(millisInFuture: Long) {
         uiState.time.value = millisInFuture
         uiState.isRunning.value = true
         timer = MyCountDownTimer(
